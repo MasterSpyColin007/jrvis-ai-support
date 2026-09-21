@@ -25,38 +25,122 @@
 <div class="wrap">
 <div class="card">
 <h1>Privacy Policy — JRVIS AI</h1>
-<p class="updated">Last updated: September 20, 2026</p>
+<p class="updated">Last updated: September 21, 2026</p>
 
-<p>JRVIS AI ("the app") is developed by Colin Prater. Your privacy matters: the app is designed so that as much as possible happens on your device, and data you create stays yours.</p>
+<p>JRVIS AI ("JRVIS," "we," "us," or "the app") is developed by Colin Prater. Your privacy matters: the app is designed so that as much as possible happens on your device, and data you create stays yours.</p>
 
-<h2>What the app collects</h2>
+<h2>Summary</h2>
 <ul>
-  <li><strong>On-device data:</strong> conversations, memories, settings, and preferences are stored on your device and, where you enable it, synced through your own iCloud account. We do not have access to your iCloud data.</li>
-  <li><strong>Cloud AI requests:</strong> when you use cloud-powered features (chat, voice, web search, image generation), your prompt and relevant context are sent to the AI provider fulfilling that request so it can respond. These providers process data under their own privacy policies.</li>
-  <li><strong>Account &amp; diagnostics:</strong> if you contact support or submit feedback, we receive the information you include (such as your email address and device details). Crash and usage diagnostics may be collected through Apple and Firebase services to fix bugs and improve the app.</li>
+  <li>JRVIS stores many settings, conversations, memories, and cached items locally on your device.</li>
+  <li>On-device features keep their processing on your device, subject to Apple system services you enable.</li>
+  <li>Cloud AI and connected features send only the data needed to fulfill your request to the selected provider.</li>
+  <li>A live cloud voice mode may stream microphone audio to its provider.</li>
+  <li>JRVIS does not sell your personal information, does not use your conversations for advertising, and does not use your data to track you across other companies' apps or websites.</li>
 </ul>
 
-<h2>What we don't do</h2>
+<h2>Data JRVIS Handles</h2>
+<p>Depending on the features you use, JRVIS may handle:</p>
+<ul>
+  <li><strong>Prompts and assistant content:</strong> questions, commands, conversations, feedback, corrections, generated responses, and relevant memory facts.</li>
+  <li><strong>Audio:</strong> microphone input, speech-recognition audio, transcripts, and audio chunks streamed during a live cloud voice session.</li>
+  <li><strong>Photos and video frames:</strong> photos, camera captures, screenshots, image URLs, or other visual content you choose for analysis or generation.</li>
+  <li><strong>Location:</strong> precise location used for weather and location-aware assistance. Location context may be included with a cloud AI request when it is relevant.</li>
+  <li><strong>Calendar and reminders:</strong> event or reminder details needed to read, create, update, or complete the action you request.</li>
+  <li><strong>Account and waitlist information:</strong> name, email address, pseudonymous identifier, waitlist name or status, and related service state when you join the waitlist or use a connected service.</li>
+  <li><strong>Identifiers and device information:</strong> pseudonymous user identifiers, an identifier for your device or app installation, push-notification tokens, device type, operating-system version, app version, and timestamps.</li>
+  <li><strong>Usage and feedback information:</strong> feature interactions, ratings, failure context, model responses, correction text, and diagnostic details submitted through feedback or optional improvement features.</li>
+  <li><strong>Purchase status:</strong> subscription products and entitlement status supplied by Apple's StoreKit services. Apple processes purchases under Apple's terms.</li>
+</ul>
+<p>JRVIS only requests access to protected data after you choose a feature that needs it or enable the corresponding permission.</p>
+
+<h2>Local Processing and Storage</h2>
+<p>JRVIS uses its app sandbox and app-group storage for items such as preferences, conversations, memories, widget snippets, speech state, and cached content. Local data remains on your device unless you use a feature that sends relevant content to a cloud provider, export or share it, or enable an Apple service (like iCloud) that synchronizes or processes it. We do not have access to your iCloud data.</p>
+<p>Long-term memories are stored locally and can be reviewed, edited, exported, or deleted in the app. When personalization is enabled, relevant memory facts may be included with a cloud AI request so the provider can generate a personalized response.</p>
+<p>Reset App clears preferences and local assistant state managed by JRVIS. Data already sent to a provider is governed by that provider's retention and deletion practices.</p>
+
+<h2>Cloud AI and Connected Services</h2>
+<p>When you select or invoke a cloud-backed feature, JRVIS sends the information needed for that request to the active provider — for example, your prompt and relevant context so the provider can respond. This may include a prompt, conversation context, microphone audio, a transcript, selected images, current location, calendar or reminder details, user-approved memory facts, model settings, and generated output.</p>
+<p>Depending on your configuration and feature availability, services may include:</p>
+<ul>
+  <li>Apple system services, including Speech Recognition, WeatherKit, StoreKit, Foundation Models, Private Cloud Compute, CloudKit, and Apple Push Notification service;</li>
+  <li>Google services, including Gemini, Gemma, Firebase Remote Config, Firebase Cloud Messaging, and Firebase-backed feedback or configuration features;</li>
+  <li>OpenRouter, Hugging Face, Replicate, AI Horde, or another model service you configure;</li>
+  <li>a ComfyUI server or other custom endpoint you configure.</li>
+</ul>
+<p>Each provider processes data under its own terms and privacy policy. Providers may have different logging, retention, safety-review, regional-processing, and account-linking practices. Review the provider's policy before sending sensitive data. Avoid sending secrets, highly sensitive personal information, or content you are not authorized to share.</p>
+
+<h2>What We Don't Do</h2>
 <ul>
   <li>We do not sell your personal information.</li>
   <li>We do not use your conversations for advertising.</li>
-  <li>We do not share your data with third parties except as needed to operate the app (for example, AI providers fulfilling your requests, Apple's App Store for subscriptions, and cloud infrastructure providers).</li>
+  <li>We do not share your data with third parties except as needed to operate the app — for example, AI providers fulfilling your requests, Apple's App Store for subscriptions, and cloud infrastructure providers.</li>
 </ul>
+
+<h2>Voice and Speech</h2>
+<p>Microphone access lets JRVIS receive voice commands. Processing depends on the mode you choose:</p>
+<ul>
+  <li>some speech and assistant features use on-device processing or Apple system services; and</li>
+  <li>live cloud voice modes may stream audio from the microphone to the selected provider in order to generate a response.</li>
+</ul>
+<p>Speech Recognition may process audio or transcripts through Apple. A cloud model may also receive the resulting transcript or audio when needed for the selected feature.</p>
+
+<h2>Images</h2>
+<p>JRVIS accesses the camera or photo library only with permission. Images you select for remote analysis or generation, together with related prompts and options, may be uploaded to the selected image-capable provider. Generated images remain subject to the provider's terms and may be saved to Photos or Files only when you choose to save them.</p>
+
+<h2>Location, Calendar, and Reminders</h2>
+<p>Location is used for weather and location-aware assistance after permission is granted. When a cloud model is active, current location context may accompany a request to personalize or fulfill the answer.</p>
+<p>Calendar and reminder features use Apple's EventKit APIs. The app may read or change only the data allowed by your iOS permission level and the action you request. Relevant event or reminder details may be included with a cloud AI request when a cloud model is used to understand or fulfill that request.</p>
+
+<h2>Feedback and Model Improvement</h2>
+<p>When you deliberately submit feedback or a correction, JRVIS may send the prompt, model response, feedback selection, correction text, surrounding context, a pseudonymous user or device identifier, device type, operating-system version, app version, and timestamp to Firebase, CloudKit, or another configured feedback service.</p>
+<p>Optional global-learning or model-improvement uploads are used only when their feature is enabled. These uploads support product analytics, troubleshooting, personalization, and model or response improvement. Do not include sensitive information in feedback.</p>
+<p>If you contact support, we receive whatever information you include (such as your email address and device details).</p>
+
+<h2>Notifications</h2>
+<p>If you enable notifications, JRVIS may use Apple Push Notification service and Firebase Cloud Messaging. A push token and basic app or device information may be sent to these services so notifications can be delivered. Notification permissions can be disabled in iOS Settings.</p>
 
 <h2>Subscriptions</h2>
 <p>JRVIS Plus subscriptions are processed by Apple through the App Store. We receive subscription status (active, expired, billing period) from Apple's systems but never see your payment details.</p>
 
-<h2>Data retention and deletion</h2>
-<p>On-device data can be deleted at any time from within the app. To request deletion of any data associated with your account on our servers, email <a href="mailto:pratercolin2010@gmail.com">pratercolin2010@gmail.com</a>.</p>
+<h2>How Data Is Used</h2>
+<p>JRVIS uses the data described above for:</p>
+<ul>
+  <li><strong>App functionality:</strong> answering requests; providing voice, image, weather, calendar, reminder, account, waitlist, subscription, and notification features; and maintaining app state.</li>
+  <li><strong>Personalization:</strong> using relevant context, preferences, memories, location, and interaction history to tailor responses when enabled.</li>
+  <li><strong>Analytics and improvement:</strong> understanding feedback and feature interactions, diagnosing failures, and improving models or responses when a feedback or improvement feature is used.</li>
+</ul>
+<p>Crash and usage diagnostics may be collected through Apple and Firebase services to fix bugs and improve the app.</p>
+<p>Data may be linked to you, your account, your app installation, or your device when an identifier or account-backed service is involved. JRVIS does not use this data for third-party advertising or cross-app tracking.</p>
+
+<h2>Data Retention and Deletion</h2>
+<p>Local content remains until you delete it, clear the relevant history, reset the app, or remove the app, subject to device backups and Apple synchronization you control. On-device data can be deleted at any time from within the app.</p>
+<p>Waitlist, authentication, feedback, notification, and model-correction records may remain with their service providers as needed to provide the feature, maintain security, diagnose problems, or comply with law. Cloud AI providers apply their own retention and deletion rules.</p>
+<p>To request deletion of any data associated with your account on our servers, email <a href="mailto:pratercolin2010@gmail.com">pratercolin2010@gmail.com</a>.</p>
+
+<h2>Your Choices and Controls</h2>
+<p>You can:</p>
+<ul>
+  <li>deny or revoke Microphone, Speech Recognition, Camera, Photos, Location, Calendar, Reminders, and Notifications access in iOS Settings;</li>
+  <li>choose an on-device model or avoid cloud providers when that option is available;</li>
+  <li>avoid live cloud voice mode or cloud image features;</li>
+  <li>review or delete conversations and memories through Conversation History and Memory Management;</li>
+  <li>disable optional integrations, sign out, or stop using a connected provider;</li>
+  <li>avoid submitting optional feedback or model corrections; and</li>
+  <li>use Reset App to clear preferences and local assistant state managed by JRVIS.</li>
+</ul>
+<p>To request help with data associated with an account, waitlist entry, or submitted feedback, contact us using the address below. We may need information sufficient to locate and verify the record. Requests concerning a third-party provider may need to be directed to that provider.</p>
+
+<h2>Security</h2>
+<p>JRVIS uses Apple platform protections and encrypted network connections where supported. No system can guarantee absolute security. Protect your device, credentials, API keys, and any custom provider endpoints you configure.</p>
 
 <h2>Children</h2>
-<p>JRVIS AI is not directed at children under 13, and we do not knowingly collect data from children under 13.</p>
+<p>JRVIS AI is not directed at children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information, contact us so we can review and delete it where appropriate.</p>
 
-<h2>Changes to this policy</h2>
-<p>If this policy changes materially, the updated version will be posted here with a new "Last updated" date.</p>
+<h2>Changes to This Policy</h2>
+<p>We may update this policy when features, providers, or legal requirements change. The "Last updated" date at the top identifies the current version. If this policy changes materially, the updated version will be posted here with a new "Last updated" date.</p>
 
 <h2>Contact</h2>
-<p>Questions about this policy: <a href="mailto:pratercolin2010@gmail.com">pratercolin2010@gmail.com</a>.</p>
+<p>Questions about this policy or privacy requests: <a href="mailto:pratercolin2010@gmail.com">pratercolin2010@gmail.com</a>.</p>
 
 <a class="back" href="index.html">← Back to Support</a>
 </div>
